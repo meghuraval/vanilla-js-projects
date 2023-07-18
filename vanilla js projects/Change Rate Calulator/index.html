@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Exchange Rate Calculator</title>
+  </head>
+  <body>
+    <img
+      src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ee/7b/4f/ee7b4f32-b14c-1cd9-6238-f4077385289b/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x600wa.png"
+      class="money-img"
+    />
+    <h1>exchange rate calculator</h1>
+    <p>choose currecy and amount to get exchange rate</p>
+
+    <div class="container">
+      <div class="currency">
+        <select id="currency-one">
+          <option value="USD">USD</option>
+          <option value="CAD" selected>CAD</option>
+          <option value="ALL">ALL</option>
+          <option value="ARS">ARS</option>
+          <option value="AUD">AUD</option>
+          <option value="EUR">EUR</option>
+          <option value="AZN">AZN</option>
+          <option value="DZD">DZD</option>
+          <option value="BMD">BMD</option>
+          <option value="BWP">BWP</option>
+          <option value="BAM">BAM</option>
+          <option value="BOB">BOB</option>
+          <option value="BRL">BRL</option>
+          <option value="BGN">BGN</option>
+          <option value="CVE">CVE</option>
+          <option value="KHR">KHR</option>
+          <option value="XAF">XAF</option>
+          <option value="KYD">KYD</option>
+          <option value="CLP">CLP</option>
+          <option value="CNY">CNY</option>
+          <option value="COP">COP</option>
+          <option value="COP">COP</option>
+          <option value="CDF">CDF</option>
+          <option value="CRC">CRC</option>
+          <option value="HRK">HRK</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="DOP">DOP</option>
+          <option value="EGP">EGP</option>
+          <option value="ETB">ETB</option>
+          <option value="FJD">FJD</option>
+          <option value="GEL">GEL</option>
+          <option value="GHS">GHS</option>
+          <option value="GIP">GIP</option>
+          <option value="GTQ">GTQ</option>
+          <option value="HNL">HNL</option>
+          <option value="HUF">HUF</option>
+          <option value="ISK">ISK</option>
+          <option value="IQD">IQD</option>
+          <option value="INR">INR</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+      </div>
+
+      <div class="swap-rate-container">
+        <button class="btn" id="swap">Swap</button>
+        <div class="rate" id="rate"></div>
+      </div>
+
+      <div class="currency">
+        <select id="currency-two">
+          <option value="USD" selected>USD</option>
+          <option value="CAD">CAD</option>
+          <option value="ALL">ALL</option>
+          <option value="ARS">ARS</option>
+          <option value="AUD">AUD</option>
+          <option value="EUR">EUR</option>
+          <option value="AZN">AZN</option>
+          <option value="DZD">DZD</option>
+          <option value="BMD">BMD</option>
+          <option value="BWP">BWP</option>
+          <option value="BAM">BAM</option>
+          <option value="BOB">BOB</option>
+          <option value="BRL">BRL</option>
+          <option value="BGN">BGN</option>
+          <option value="CVE">CVE</option>
+          <option value="KHR">KHR</option>
+          <option value="XAF">XAF</option>
+          <option value="KYD">KYD</option>
+          <option value="CLP">CLP</option>
+          <option value="CNY">CNY</option>
+          <option value="COP">COP</option>
+          <option value="COP">COP</option>
+          <option value="CDF">CDF</option>
+          <option value="CRC">CRC</option>
+          <option value="HRK">HRK</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="DOP">DOP</option>
+          <option value="EGP">EGP</option>
+          <option value="ETB">ETB</option>
+          <option value="FJD">FJD</option>
+          <option value="GEL">GEL</option>
+          <option value="GHS">GHS</option>
+          <option value="GIP">GIP</option>
+          <option value="GTQ">GTQ</option>
+          <option value="HNL">HNL</option>
+          <option value="HUF">HUF</option>
+          <option value="ISK">ISK</option>
+          <option value="IQD">IQD</option>
+          <option value="INR">INR</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
